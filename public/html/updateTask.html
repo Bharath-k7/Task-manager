@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Task</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios@latest/dist/axios.min.js"
+    ></script>
+    <script defer src="/js/updateTask.js"></script>
+  </head>
+  <body class="task-update-body">
+    <div class="task-form-container">
+      <h1 class="task-form-heading">Update Task</h1>
+      <form id="task-update-form">
+        <div class="task-form-group">
+          <label for="task-title" class="task-form-label">Task Title</label>
+          <input
+            type="text"
+            id="task-title"
+            name="task-title"
+            class="task-form-input"
+            placeholder="Enter task title"
+            required
+          />
+        </div>
+
+        <div class="task-form-group">
+          <label for="task-description" class="task-form-label"
+            >Description</label
+          >
+          <textarea
+            id="task-description"
+            name="task-description"
+            class="task-form-textarea"
+            placeholder="Enter task description"
+            required
+          ></textarea>
+        </div>
+
+        <div class="task-form-group">
+          <label for="task-assignee" class="task-form-label">Assignee</label>
+          <select
+            id="task-assignee"
+            name="task-assignee"
+            class="task-form-select"
+            required
+          ></select>
+        </div>
+
+        <div class="task-form-group">
+          <label for="task-priority" class="task-form-label">Priority</label>
+          <select
+            id="task-priority"
+            name="task-priority"
+            class="task-form-select"
+            required
+          >
+            <option value="" disabled selected>Select priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+
+        <div class="task-form-group">
+          <label for="task-due-date" class="task-form-label">Due Date</label>
+          <input
+            type="date"
+            id="task-due-date"
+            name="task-due-date"
+            class="task-form-input"
+            required
+          />
+        </div>
+
+        <div class="task-form-group">
+          <button type="submit" class="task-form-button">Update Task</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

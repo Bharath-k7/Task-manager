@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin DashBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/adminDashBoard.js"></script>
+  </head>
+  <body class="admin-body">
+    <div class="admin-container">
+      <h1 class="admin-heading">Admin DashBoard</h1>
+      <div class="admin-header">
+        <div class="admin-search-filter">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="search by title or assignee"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-filter"></i>
+        </div>
+        <button class="admin-logout-btn">Logout</button>
+      </div>
+      <div class="admin-table-container">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Priority</th>
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Assignee</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>React component</td>
+              <td>High</td>
+              <td>12-10-2024</td>
+              <td>in-progress</td>
+              <td>user-1</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>React component</td>
+              <td>High</td>
+              <td>12-10-2024</td>
+              <td>in-progress</td>
+              <td>user-1</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>React component</td>
+              <td>High</td>
+              <td>12-10-2024</td>
+              <td>in-progress</td>
+              <td>user-1</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>React component</td>
+              <td>High</td>
+              <td>12-10-2024</td>
+              <td>in-progress</td>
+              <td>user-1</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>React component</td>
+              <td>High</td>
+              <td>12-10-2024</td>
+              <td>in-progress</td>
+              <td>user-1</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>React component</td>
+              <td>High</td>
+              <td>12-10-2024</td>
+              <td>in-progress</td>
+              <td>user-1</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <i class="fa-solid fa-trash"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- pagination -->
+      <div class="admin-feature-btns">
+        <a href="#" class="registered-user-btn">Registered user</a>
+        <a href="#" class="assign-task-btn">Assign task</a>
+      </div>
+    </div>
+  </body>
+</html>

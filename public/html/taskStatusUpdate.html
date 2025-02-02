@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Status Update</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios@latest/dist/axios.min.js"
+    ></script>
+    <script defer src="/js/statusUpdate.js"></script>
+  </head>
+  <body class="status-body">
+    <div class="status-container">
+      <h1 class="status-heading">Task Status Update</h1>
+      <div class="status-task-details"></div>
+      <div class="status-input">
+        <label for="task-status">Status: </label>
+        <select
+          id="task-status"
+          name="task-status"
+          class="task-status-select"
+          required
+        ></select>
+      </div>
+      <div class="status-btns">
+        <a href="/user">Back</a>
+        <button class="statusUpdate-btn">Save</button>
+      </div>
+    </div>
+  </body>
+</html>

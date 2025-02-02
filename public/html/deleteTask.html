@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Task</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios@latest/dist/axios.min.js"
+    ></script>
+    <script defer src="/js/deleteTask.js"></script>
+  </head>
+  <body class="delete-body">
+    <div class="delete-container">
+      <h1 class="delete-heading">Delete Task</h1>
+      <div class="delete-task-details"></div>
+      <div class="delete-btns">
+        <a href="/admin/">Cancel</a>
+        <button class="delete-btn">Delete</button>
+      </div>
+      <div class="delete-confirm-popup">
+        <p class="delete-confirm-message">
+          Are you sure, want to delete this task?
+        </p>
+        <div class="delete-confirm-btns">
+          <button class="delete-confirm-cancel">Cancel</button>
+          <button class="delete-confirm-btn">Delete</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

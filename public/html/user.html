@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin DashBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios@latest/dist/axios.min.js"
+    ></script>
+    <script defer src="/js/userDashBoard.js"></script>
+    <script defer src="/js/logout.js"></script>
+  </head>
+  <body class="user-body">
+    <div class="user-container">
+      <h1 class="user-heading">User DashBoard</h1>
+      <div class="user-header">
+        <div class="user-search-filter">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="search by title"
+          />
+          <i class="fa-solid fa-magnifying-glass search"></i>
+          <i class="fa-solid fa-filter filter"></i>
+          <form class="filter-form">
+            <label for="status">Status:</label>
+            <select id="status">
+              <option value="" selected>Filter By Status</option>
+              <option value="pending">Pending</option>
+              <option value="in-progress">In Progress</option>
+              <option value="completed">Completed</option>
+              <option value="denied">Denied</option>
+            </select>
+
+            <label for="priority">Priority:</label>
+            <select id="priority">
+              <option value="" selected>Filter By Priority</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+
+            <a type="submit" id="filter-cancel-btn">Cancel</a>
+            <a id="filter-apply-btn">Apply</a>
+          </form>
+        </div>
+        <button class="logout-btn">Logout</button>
+        <div class="logout-confirm-popup">
+          <p class="logout-confirm-message">Are you sure, want to logout?</p>
+          <div class="logout-confirm-btns">
+            <button class="logout-confirm-cancel">Cancel</button>
+            <a href="/auth/logout" class="logout-confirm-btn">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="user-table-container">
+        <table class="user-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Priority</th>
+              <th>Due Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!-- pagination -->
+      <!-- <div class="admin-feature-btns">
+        <a href="#" class="registered-user-btn">Registered user</a>
+        <a href="#" class="assign-task-btn">Assign task</a>
+      </div> -->
+    </div>
+  </body>
+</html>
